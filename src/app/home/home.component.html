@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="slider-wrapper">
+      <div class="slider">
+        <img
+          [src]="images[currentIndex]"
+          [alt]="'Slide ' + (currentIndex + 1)"
+          class="slider-image"
+          [class.slide-in]="slideIn"
+        />
+      </div>
+
+      <button class="slider-button slider-prev" (click)="previousSlide()">
+        ❮
+      </button>
+      <button class="slider-button slider-next" (click)="nextSlide()">❯</button>
+
+      <div class="slider-dots">
+        <button
+          *ngFor="let image of images; let i = index"
+          class="dot"
+          [class.active]="i === currentIndex"
+          (click)="goToSlide(i)"
+          [attr.aria-label]="'Go to slide ' + (i + 1)"
+        ></button>
+      </div>
+    </div>
+    <div class="cards-container">
+      <div class="card">
+        <div class="card-content">
+          <img
+            src="assets/images/refreshicons.png"
+            alt="Refresh icon"
+            class="card-icon refresh-icon"
+          />
+          <h3 id="heddingComplete360">A Complete 360°</h3>
+          <p>Learning Experience</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <img
+            src="assets/images/groupicons.jpg"
+            alt="Group icon"
+            class="card-icon group-icon"
+          />
+          <h3>100+</h3>
+          <p>Students Trained</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <img
+            src="assets/images/bookicon.png"
+            alt="Book icon"
+            class="card-icon book-icon"
+          />
+          <h3>10+</h3>
+          <p>Courses Offered</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <img
+            src="assets/images/teachericon.png"
+            alt="Teacher icon"
+            class="card-icon teacher-icon"
+          />
+          <h3>5+</h3>
+          <p>Expert Trainers</p>
+        </div>
+      </div>
+    </div>
+    <section class="course-section">
+      <h2 class="heading">
+        Master In-Demand IT Skills with Real-Time Projects and 100% Job
+        Assistance
+      </h2>
+
+      <div class="course-cards-wrapper">
+        <div class="course-box">
+          <div class="cards-imag">
+            <img src="assets/images/javafullstack.png" alt="course" />
+          </div>
+          <div class="content">
+            <h3>Java Fullstack Developer</h3>
+            <p><b>Course Duration</b>: 5 Months</p>
+          </div>
+
+          <button class="course-view-btn" (click)="onView('Course 1')">
+            View More
+          </button>
+        </div>
+
+        <div class="course-box">
+          <div class="cards-imag">
+            <img src="assets/images/generativeai.jpg" alt="course" />
+          </div>
+          <div class="content">
+            <h3>Generative AI</h3>
+            <p><b>Course Duration</b>: 3 Months</p>
+          </div>
+
+          <button class="course-view-btn" (click)="onView('Course 2')">
+            View More
+          </button>
+        </div>
+
+        <div class="course-box">
+          <div class="cards-imag">
+            <img src="assets/images/devops.jpg" alt="course" />
+          </div>
+          <div class="content">
+            <h3>DevOps</h3>
+            <p><b>Course Duration</b>: 4 Months</p>
+          </div>
+
+          <button class="course-view-btn" (click)="onView('Course 3')">
+            View More
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
