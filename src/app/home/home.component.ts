@@ -6,7 +6,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit, OnDestroy {
-  images: string[] = ['assets/images/image1.png', 'assets/images/image2.png'];
+  images: string[] = ['assets/images/image-11.png', 'assets/images/image-12.png'];
 
   currentIndex: number = 0;
   slideIn: boolean = true;
