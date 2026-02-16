@@ -6,7 +6,10 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit, OnDestroy {
-  images: string[] = ['assets/images/image-11.png', 'assets/images/image-12.png'];
+  images: string[] = [
+    'assets/images/image-11.png',
+    'assets/images/image-12.png',
+  ];
 
   currentIndex: number = 0;
   slideIn: boolean = true;
@@ -63,5 +66,12 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   onView(courseName: string) {
     alert(courseName + ' View More clicked');
+  }
+
+  connectTeam() {
+    window.open(
+      'https://wa.me/91xxxxxxxxxx?text=Hi%20I%20want%20career%20counseling',
+      '_blank',
+    );
   }
 }
