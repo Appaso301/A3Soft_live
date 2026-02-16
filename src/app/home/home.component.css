@@ -306,3 +306,81 @@ body {
 .course-box:hover {
   transform: translateY(-6px);
 }
+
+/* Seconed heading */
+
+.career-cta {
+  text-align: center;
+  padding: 44px 20px;
+  background: #ffffff;
+  padding-bottom: 25px;
+}
+
+.career-cta h2 {
+  font-size: 24px;
+  margin-bottom: 49px;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #28a745;
+  color: #ffffff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 24px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cta-btn .icon {
+  font-size: 22px;
+}
+
+/* Results Section */
+
+.results-section {
+  background: white;
+  padding: 59px 107px;
+  text-align: center;
+}
+
+.results-title {
+  font-size: 24px;
+  margin-bottom: 33px;
+}
+
+.results-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.result-box {
+  width: 280px;
+  text-align: center;
+}
+
+.result-img img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: -4px;
+}
+
+.user-icon img {
+  width: 35px;
+  height: 35px;
+  margin-top: 13px;
+}
+
+.result-box h3 {
+  font-size: 17px;
+  margin-bottom: 3px;
+}
+
+.result-box p {
+  color: #454242;
+  font-size: 17px;
+}
