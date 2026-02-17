@@ -1,5 +1,14 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 
+interface Testimonial {
+  name: string;
+  message: string;
+  education: string;
+  role: string;
+  theme: string;
+  avatar: string;
+}
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -11,9 +20,9 @@ export class HomeComponent implements OnInit, OnDestroy {
     'assets/images/image-12.png',
   ];
 
-  currentIndex: number = 0;
-  slideIn: boolean = true;
-  private autoSlideInterval: any;
+currentIndex: number = 0;
+slideIn: boolean = true;
+private autoSlideInterval: any;
 
   ngOnInit(): void {
     this.startAutoSlide();
@@ -74,4 +83,83 @@ export class HomeComponent implements OnInit, OnDestroy {
       '_blank',
     );
   }
+
+
+
+// review card 
+
+
+
+
+  testimonials: Testimonial[] = [
+    {
+      name: 'Arun',
+      message: `I joined Ashok IT with no prior experience in IT. The trainers and placement support team helped me build confidence, and now I’m working as a Java Developer.`,
+      education: 'B.Tech Graduated in 2019',
+      role: 'Java Developer at TCS',
+      theme: 'yellow',
+      avatar: 'assets/avatar1.png'
+    },
+    {
+      name: 'Chandra',
+      message: `Ashok IT gave me the right direction in my career. Their real-time project exposure helped me crack interviews with ease.`,
+      education: 'MCA Graduated in 2018',
+      role: 'Software Engineer at JP Morgan',
+      theme: 'blue',
+      avatar: 'assets/avatar2.png'
+    },
+    {
+      name: 'Neha',
+      message: `Thanks to Ashok IT’s trainers, I was able to switch my career from non-IT to IT. The hands-on training and mock interviews made all the difference.`,
+      education: 'MBA Graduated in 2020',
+      role: 'Business Analyst at Infosys',
+      theme: 'yellow',
+      avatar: 'assets/avatar3.png'
+    },
+    {
+      name: 'Ravi Kumar',
+      message: `Ashok IT is the best choice for freshers looking to enter the software field. The faculty is supportive, and their placement team helped me secure my first job.`,
+      education: 'B.Sc Graduated in 2021',
+      role: 'Python Developer at Cognizant',
+      theme: 'blue',
+      avatar: 'assets/avatar4.png'
+    },
+    {
+      name: 'Priya Sharma',
+      message: `Joining Ashok IT was a turning point in my career. The structured training and continuous support helped me land a job as a Data Analyst within 3 months of completing the course.`,
+      education: 'B.Com Graduated in 2022',
+      role: 'Data Analyst at Wipro',
+      theme: 'yellow',
+      avatar: 'assets/avatar5.png'
+    },
+    {
+      name: 'Sai Kiran',
+      message: `With Ashok IT’s guidance, I was able to upskill in Full Stack Development. Their real-time projects and mock interview sessions made me confident during actual job interviews.`,
+      education: 'B.Tech Graduated in 2023',
+      role: 'Full Stack Developer at Capgemini',
+      theme: 'blue',
+      avatar: 'assets/avatar6.png'
+    }
+  ];
+
+
+// callback_button
+
+
+  requestCallBack() {
+    alert('Request Call Back clicked!');
+    // You can open a modal or navigate here
+  }
 }
+//  callback_button end
+
+
+
+
+ 
+
+
+
+
+
+
