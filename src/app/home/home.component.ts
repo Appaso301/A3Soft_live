@@ -20,9 +20,9 @@ export class HomeComponent implements OnInit, OnDestroy {
     'assets/images/image-12.png',
   ];
 
-currentIndex: number = 0;
-slideIn: boolean = true;
-private autoSlideInterval: any;
+  currentIndex: number = 0;
+  slideIn: boolean = true;
+  private autoSlideInterval: any;
 
   ngOnInit(): void {
     this.startAutoSlide();
@@ -84,12 +84,7 @@ private autoSlideInterval: any;
     );
   }
 
-
-
-// review card 
-
-
-
+  // review card
 
   testimonials: Testimonial[] = [
     {
@@ -98,7 +93,7 @@ private autoSlideInterval: any;
       education: 'B.Tech Graduated in 2019',
       role: 'Java Developer at TCS',
       theme: 'yellow',
-      avatar: 'assets/avatar1.png'
+      avatar: 'assets/avatar1.png',
     },
     {
       name: 'Chandra',
@@ -106,7 +101,7 @@ private autoSlideInterval: any;
       education: 'MCA Graduated in 2018',
       role: 'Software Engineer at JP Morgan',
       theme: 'blue',
-      avatar: 'assets/avatar2.png'
+      avatar: 'assets/avatar2.png',
     },
     {
       name: 'Neha',
@@ -114,7 +109,7 @@ private autoSlideInterval: any;
       education: 'MBA Graduated in 2020',
       role: 'Business Analyst at Infosys',
       theme: 'yellow',
-      avatar: 'assets/avatar3.png'
+      avatar: 'assets/avatar3.png',
     },
     {
       name: 'Ravi Kumar',
@@ -122,7 +117,7 @@ private autoSlideInterval: any;
       education: 'B.Sc Graduated in 2021',
       role: 'Python Developer at Cognizant',
       theme: 'blue',
-      avatar: 'assets/avatar4.png'
+      avatar: 'assets/avatar4.png',
     },
     {
       name: 'Priya Sharma',
@@ -130,7 +125,7 @@ private autoSlideInterval: any;
       education: 'B.Com Graduated in 2022',
       role: 'Data Analyst at Wipro',
       theme: 'yellow',
-      avatar: 'assets/avatar5.png'
+      avatar: 'assets/avatar5.png',
     },
     {
       name: 'Sai Kiran',
@@ -138,13 +133,11 @@ private autoSlideInterval: any;
       education: 'B.Tech Graduated in 2023',
       role: 'Full Stack Developer at Capgemini',
       theme: 'blue',
-      avatar: 'assets/avatar6.png'
-    }
+      avatar: 'assets/avatar6.png',
+    },
   ];
 
-
-// callback_button
-
+  // callback_button
 
   requestCallBack() {
     alert('Request Call Back clicked!');
@@ -152,14 +145,3 @@ private autoSlideInterval: any;
   }
 }
 //  callback_button end
-
-
-
-
- 
-
-
-
-
-
-
