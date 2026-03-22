@@ -1,0 +1,59 @@
+.contact-container {
+  width: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Banner */
+.banner {
+  background-color: #1368d8;
+  color: #f7f4f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px;
+}
+
+.banner img {
+  width: 250px;
+}
+
+.title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 280px;
+  padding: 25px;
+  border-radius: 15px;
+  background: #f3f3f3;
+  box-shadow: 10px 4px 12px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.email-card {
+  background-color: #f8f9f8;
+}
+
+.card i {
+  font-size: 20px;
+  color: rgb(255, 85, 0);
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 20px;
+}
