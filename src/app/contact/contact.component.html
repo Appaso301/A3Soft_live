@@ -40,3 +40,45 @@
     </div>
   </div>
 </div>
+<div class="bookform-container">
+  <div class="header">
+    <h2>Book a 1:1 Free Career Guidance Call</h2>
+  </div>
+
+
+  <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+    
+    <div class="form-group">
+      <label>Name *</label>
+      <input type="text" name="name" [(ngModel)]="formData.name" required placeholder="Enter Name">
+    </div>
+
+    <div class="form-group">
+      <label>Email Address *</label>
+      <input type="email" name="email" [(ngModel)]="formData.email" required placeholder="Enter Email Address">
+    </div>
+
+    <div class="form-group">
+      <label>Country Code *</label>
+      <select name="countryCode" [(ngModel)]="formData.countryCode" required>
+        <option value="+91">India (+91)</option>
+        <option value="+1">USA (+1)</option>
+        <option value="+44">UK (+44)</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Phone Number *</label>
+      <input type="tel" name="phone" [(ngModel)]="formData.phone" required placeholder="Enter Phone Number">
+    </div>
+
+    <div class="form-group">
+      <label>Message *</label>
+      <textarea name="message" [(ngModel)]="formData.message" required placeholder="Type Your Message Here..."></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Send Message</button>
+
+  </form>
+
+  </div> 
